@@ -1,0 +1,268 @@
+body{
+    margin:0 1%;    
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+header{
+    display:flex;
+    background:white;
+    padding:15px;
+    border-bottom:2px solid brown
+}
+.flag{
+    display:flex;
+    margin:0 auto;
+    align-items:center
+}
+.flag-img{
+    height:40px
+}
+.flag h1{
+        font-family: "Abril Fatface", serif;
+        font-weight: 400;
+        font-style: normal;
+        color:brown
+}
+main{
+    display:flex;
+    margin-top:50px;
+    max-width:1000px;
+    margin:0 auto;
+    align-items:center;
+}
+.boas-vindas{
+    flex:40%;
+    margin:5%
+}
+.boas-vindas h2{
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:32px;
+    color:rgb(7, 68, 6);
+    text-align:center
+}
+.boas-vindas p{
+    text-align:justify;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+}
+.boas-vindas-img{
+    flex:40%;
+    margin:5%;
+    border:2px solid brown
+}
+.titles{
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:32px;
+    color:rgb(7, 68, 6);
+    text-align:center;
+    margin-top:25px
+}
+.grid1{
+    display:grid;
+    max-width:900px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin:0 auto
+}
+.infos{
+    border:2px solid brown;
+    text-align:center;
+    padding:20px 10px
+}
+.infos:hover{
+    background:brown;
+    color:white
+}
+.infos:hover h3{
+    color:white
+}
+.infos:hover img{
+    background:white;
+    border-radius:5px
+}
+img.infos-img{
+    margin:0 auto;
+    width:50px
+}
+.infos h3{
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:20px;
+    color:rgb(7, 68, 6);
+}
+.infos p{
+    text-indent: 15px;
+    text-align:center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.1em;
+}
+.pontos-turisticos{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:10px;
+    margin:0 auto;
+    max-width:900px
+}
+.pontos-turisticos h3{
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:1.3em;
+    color:rgb(7, 68, 6);
+    text-align:center
+}
+.minhas-fotos{
+    max-width:1000px;
+    margin:0 auto
+}
+.minhas-fotos p{
+    text-align:justify;
+    text-indent:35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    margin:0 50px
+}
+.button{
+    background-color: rgb(7, 68, 6);
+    max-width:350px;
+    border:1px solid rgb(7, 68, 6);
+    margin:50px auto;
+    padding:20px;
+    border-radius:5px;
+    text-align: center;
+}
+.button a{
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align:center;
+    text-decoration:none;
+    color:white;
+    font-size:1.3em;
+    text-align:center;
+    padding:20px;
+}
+.button:hover{
+    opacity:0.7;
+}
+footer{
+    margin-top:100px;
+    padding:30px;
+    text-align:center;
+    border-top:6px solid brown;
+    outline: 2px solid rgb(0, 68, 0);
+}
+footer h3{
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    color:brown;
+    padding:20px
+}
+footer p{
+    text-align:center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    padding:20px
+}
+.obs{
+    text-align:center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    color:brown
+}
+.grid2{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:10px;
+    max-width:900px;
+    margin:50px auto
+}
+.foto h3{
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    color:brown;
+    text-align:center
+}
+.foto a:hover{
+    opacity:0.8
+}
+.imagem{
+    max-width: 1000px;
+    margin:50px auto;
+    text-align:center;
+}
+.imagem h3{
+    text-align:center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    padding:10px;
+    color:brown
+}
+@media screen and (max-width:600px){ 
+    main{
+        display:block;
+        margin:0 auto;
+    }
+    .boas-vindas p{
+        text-indent:30px
+    }
+    .button{
+        max-width:300px;
+        padding:10px
+    }
+    .grid1{
+        grid-template-columns: 1fr;
+        margin-left:5%;
+        margin-right:5%
+    }
+    .grid2{
+       grid-template-columns: 1fr;    
+    }
+    .obs{
+        display:none
+    }
+    .pontos-turisticos h3{
+        font-size:1.1em
+    }
+   
+
+}
+@media screen and (min-width:600px) and (max-width:700px){
+    .boas-vindas h2{
+        font-size:25px;
+    }
+    .boas-vindas p{
+        font-size: 1em;
+    } 
+    .grid1{
+        grid-template-columns: 1fr 1fr;
+    }
+    .grid2{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width:700px) and (max-width:750px){
+    .boas-vindas h2{
+        font-size:25px;
+    }
+    .boas-vindas p{
+        font-size: 1em;
+    }    
+    .grid2{
+        grid-template-columns: 1fr 1fr;
+    }
+}
